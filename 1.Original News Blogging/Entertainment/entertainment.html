@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entertainment News Page</title>
+    <script src="https://kit.fontawesome.com/f08ed00f24.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="entertainment.css">
+    <script src="entertainment.js"></script>
+    <link rel="stylesheet" type="text/css" href="../Navbar/navbar.css">
+    <script src="/Navbar/navbar.js"></script>
+    <link rel="stylesheet" type="text/css" href="../Foot/foot.css">
+</head>
+
+<body>
+    <script>
+        fetch('../Navbar/navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            });
+        fetch('../Foot/foot.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('foot-placeholder').innerHTML = data;
+            });
+    </script>
+
+    <div id="navbar-placeholder"></div>
+
+    <section class="entertainment">
+        <div class="content">
+            <h2>Entertainment News</h2>
+        </div>
+        <div class="topHeadlines">
+            <div class="left">
+                <div class="title">
+                    <h2>Breaking News</h2>
+                </div>
+                <div class="img" id="breakingImg"></div>
+                <div class="text" id="breakingNews">
+                    <div class="title"></div>
+                    <div class="description">
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="title">
+                    <h2>Top Headlines</h2>
+                </div>
+                <div class="topNews">
+                </div>
+            </div>
+        </div>
+        <div class="page2">
+            <!--       -->
+            <div class="news" id="entertainmentNews">
+                <div class="title">
+                    <h2>Daily News</h2>
+                </div>
+                <div class="newsBox">
+                    <div class="newsCard">
+                        <div class="img"></div>
+                        <div class="text">
+                            <div class="title">
+                                <p>
+                                    Commodi id temporibus cum quidem! Hic laborum, adipisci reprehenderit laboriosam
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="foot-placeholder"></div>
+
+</body>
+
+</html>

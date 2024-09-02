@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Page</title>
+    <script src="https://kit.fontawesome.com/f08ed00f24.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="contact.css">
+    <link rel="stylesheet" type="text/css" href="../Navbar/navbar.css">
+    <script src="/Navbar/navbar.js"></script>
+    <link rel="stylesheet" type="text/css" href="../Foot/foot.css">
+</head>
+
+<body>
+    <script>
+        fetch('../Navbar/navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            });
+        fetch('../Foot/foot.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('foot-placeholder').innerHTML = data;
+            });
+    </script>
+
+    <div id="navbar-placeholder"></div>
+
+    <section class="contact">
+        <div class="content">
+            <h2>Contact Us</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora voluptatum accusantium illo temporibus
+                animi aperiam obcaecati beatae enim. Ex suscipit unde natus deleniti officia? Necessitatibus quas
+                explicabo temporibus et labore!
+            </p>
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>Lorem ipsum dolor sit<br>Lorem ipsum<br>Lorem</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>123-456-7890</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>abc123@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form>
+                    <h2>Send Message</h2>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea required="required"></textarea>
+                        <span>Type your Message...</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" name="" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div id="foot-placeholder"></div>
+
+</body>
+</html>

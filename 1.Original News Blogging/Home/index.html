@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="index.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogging Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" type="text/css" href="../Navbar/navbar.css">
+    <script src="/Navbar/navbar.js"></script>
+    <link rel="stylesheet" type="text/css" href="../Foot/foot.css">
+</head>
+
+<body>
+    <script>
+        fetch('../Navbar/navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            });
+        fetch('../Foot/foot.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('foot-placeholder').innerHTML = data;
+            });
+    </script>
+
+    <div id="navbar-placeholder"></div>
+
+    <div class="title">
+        <h1>Levaze Blogging Website</h1>
+    </div>
+    <main>
+        <!-- Main content as before -->
+        <div class="video-container">
+            <video controls width="100%" height="500px">
+                <source src="./video/4765224-hd_1920_1080_24fps - Copy.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="news-container">
+            <div class="news-item">
+                <a
+                    href="https://timesofindia.indiatimes.com/auto/policy-and-industry/great-news-no-driving-test-at-rtos-for-license-from-june-1-minors-without-dl-to-be-fined-rs-25000/articleshow/110362552.cms#:~:text=Great%20news!-,No%20driving%20test%20at%20RTOs%20for%20license%20from%20June%201,to%20be%20fined%20Rs%2025%2C000&text=MoRTH%20simplifies%20licensing%20procedure%20by,to%20acquire%20a%20driver's%20license.">
+                    <img src="./images/newstitle1.jpeg" alt="News 1"></a>
+                <div class="news-content">
+                    <h2 class="news-title">New driving license rules in India from June 1: All you need to know</h2>
+                    <p class="news-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor,
+                        magna a vestibulum rhoncus, mi lacus venenatis nisl, vel aliquet lorem nisi et sapien.</p>
+                </div>
+            </div>
+            <div class="news-item">
+                <a
+                    href="https://www.mid-day.com/mumbai/mumbai-news/article/maharashtra-hsc-12th-result-2024-city-improves-despite-ranking-last-23350467#:~:text=According%20to%20an%20official%20from,students%20appearing%20among%20all%20divisions.%E2%80%9D">
+                    <img src="./images/newstitle2.jpeg" alt="News 2"></a>
+                <div class="news-content">
+                    <h2 class="news-title">Maharashtra HSC 12th Result 2024: City improves despite ranking last!</h2>
+                    <p class="news-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor,
+                        magna a vestibulum rhoncus, mi lacus venenatis nisl, vel aliquet lorem nisi et sapien.</p>
+                </div>
+            </div>
+            <div class="news-item">
+                <a
+                    href="https://www.indiatoday.in/india/story/pune-porsche-crash-teen-driver-school-bully-charge-ncp-mla-wife-2542533-2024-05-22">
+                    <img src="./images/newstitile3.jpeg" alt="News 3"></a>
+                <div class="news-content">
+                    <h2 class="news-title">Maharashtra MLA's wife recalls how Pune teen driver bullied her son in school
+                    </h2>
+                    <p class="news-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor,
+                        magna a vestibulum rhoncus, mi lacus venenatis nisl, vel aliquet lorem nisi et sapien.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="background-container">
+            <h1 class="heading-container">Technology News</h1>
+            <div class="image-container">
+                <div class="image-wrapper">
+                    <img src="./images/tech1.webp" alt="Image 1">
+                    <div class="description">
+                        <h5>Truecaller teams up with Microsoft to bring personalised AI voice tech: How
+                            can you set it up</h5>
+                        <hr>
+                        <div class="news-actions">
+                            <span class="news-action"><i class="fas fa-eye"></i> 1.2k</span>
+                            <span class="news-action"><i class="fas fa-thumbs-up"></i> 465</span>
+                            <span class="news-action"><i class="fas fa-comments"></i> 239</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="image-wrapper">
+                    <img src="./images/tech2.avif" alt="Image 2">
+                    <div class="description">
+                        <h5>Amazon to launch AI-powered Alexa with new subscription plans</h5>
+                        <hr>
+                        <div class="news-actions">
+                            <span class="news-action"><i class="fas fa-eye"></i> 3.6k</span>
+                            <span class="news-action"><i class="fas fa-thumbs-up"></i> 865</span>
+                            <span class="news-action"><i class="fas fa-comments"></i> 577</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-wrapper">
+                    <img src="./images/tech3.avif" alt="Image 3">
+                    <div class="description">
+                        <h5>Exclusive: Microsoft’s UAE deal could transfer key U.S. chips and AI technology abroad</h5>
+                        <hr>
+                        <div class="news-actions">
+                            <span class="news-action"><i class="fas fa-eye"></i> 2.3k</span>
+                            <span class="news-action"><i class="fas fa-thumbs-up"></i> 1.8k</span>
+                            <span class="news-action"><i class="fas fa-comments"></i> 500</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="button-container">
+                <button class="view-all-button"><a href="/Technology/Technology/index.html">View All</a></button>
+            </div>
+        </div>
+        <h1 class="heading-container">Opinion</h1>
+        <div class="my-container">
+            <h1 class="heading"></h1>
+            <div class="images-container">
+                <a
+                    href="https://www.thehindu.com/opinion/lead/a-no-limit-bromance-that-is-not-just-a-bilateral-matter/article68204733.ece">
+                    <img src="./images/op1.jpg" alt="Image 1"></a>
+                <div class="description">
+                    <p>A ‘no-limit’ bromance that is not just a bilateral matter</p>
+                    <div class="interactions">
+                        <button class="like">Like</button>
+                        <button class="comment">Comment</button>
+                    </div>
+                </div>
+            </div>
+            <div class="images-container">
+                <a
+                    href="https://www.ndtv.com/opinion/iran-president-raisi-a-parable-for-the-times-5718760#:~:text=Raisi%2C%20the%20face%20of%20repression,and%20pegged%20their%20headscarves%20on.">
+                    <img src="./images/op2.jpg" alt="Image 2"></a>
+                <div class="description">
+                    <p>Iran President Raisi, A Parable For The Times</p>
+                    <div class="interactions">
+                        <button class="like">Like</button>
+                        <button class="comment">Comment</button>
+                    </div>
+                </div>
+            </div>
+            <div class="images-container">
+                <a
+                    href="https://www.ndtv.com/opinion/is-realignment-of-parties-possible-post-the-big-poll-verdict-5705392">
+                    <img src="./images/op3.jpg" alt="Image 3"></a>
+                <div class="description">
+                    <p>Is Realignment Of Parties Possible Post The Big Poll Verdict?</p>
+                    <div class="interactions">
+                        <button class="like">Like</button>
+                        <button class="comment">Comment</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="background-container">
+            <h1 class="headings-container">Sports News</h1>
+            <div class="imagess-container">
+                <div class="imagess-wrapper">
+                    <a
+                        href="https://www.thehindubusinessline.com/news/sports/rr-end-rcbs-campaign-with-four-wicket-win-in-ipl-eliminator/article68206520.ece#:~:text=Rajasthan%20Royals%20ended%20Royal%20Challengers,with%20six%20balls%20to%20spare.">
+                        <img src="./images/spo1.jpg" alt="Image 1"></a>
+                    <div class="description">
+                        <h5>Scratchy Rajasthan Royals end RCB's sensational run with four-wicket win in Eliminator
+                        </h5>
+                        <hr>
+                        <div class="news-actions">
+                            <span class="news-action"><i class="fas fa-eye"></i> 8.8k</span>
+                            <span class="news-action"><i class="fas fa-thumbs-up"></i> 6.7k</span>
+                            <span class="news-action"><i class="fas fa-comments"></i> 2.3k</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="imagess-wrapper">
+                    <a
+                        href="https://www.footballinsider247.com/arsenal-plotting-to-sign-benjamin-sesko-before-30th-june-deadline-sources/#:~:text=RB%20Leipzig%20are%20working%20hard,before%20the%20end%20of%20June.">
+                        <img src="./images/spo2.webp" alt="Image 2"></a>
+                    <div class="description">
+                        <h5>Arsenal plotting to sign Benjamin Sesko before 30th June deadline – sources</h5>
+                        </a>
+                        <hr>
+                        <div class="news-actions">
+                            <span class="news-action"><i class="fas fa-eye"></i> 2.3k</span>
+                            <span class="news-action"><i class="fas fa-thumbs-up"></i> 1.4k</span>
+                            <span class="news-action"><i class="fas fa-comments"></i> 899</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="imagess-wrapper">
+                    <a
+                        href="https://www.indiatoday.in/sports/cricket/story/ipl-2024-mumbai-indians-capatan-hardik-pandya-fails-sunil-gavaskar-2540661-2024-05-18">
+                        <img src="./images/spo3.webp" alt="Image 3"></a>
+                    <div class="description">
+                        <h5>Why did Hardik Pandya fail for MI in IPL 2024? Sunil Gavaskar provides reason</h5>
+                        </a>
+                        <hr>
+                        <div class="news-actions">
+                            <span class="news-action"><i class="fas fa-eye"></i> 700</span>
+                            <span class="news-action"><i class="fas fa-thumbs-up"></i> 342</span>
+                            <span class="news-action"><i class="fas fa-comments"></i> 168</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="button-container">
+                <button class="view-all-button"><a href="/Sports/Sports/sports.html">View All</a></button>
+            </div>
+        </div>
+        <div class="card-container">
+            <h1 class="heading-container">Podcast</h1>
+            <div class="card">
+                <img src="./images/pod1.webp" alt="Image 1" class="card-image">
+                <div class="card-description"><a href=https://www.youtube.com/watch?v=PQdyGjMHbQ4>Toni
+                        Kroos Tribute</a></div>
+            </div>
+            <div class="card">
+                <img src="./images/pod2.jpeg" alt="Image 2" class="card-image">
+                <div class="card-description"><a
+                        href="https://www.youtube.com/watch?app=desktop&v=kbKldiDOgEE">Cristiano Ronaldo</a></div>
+            </div>
+            <div class="card">
+                <img src="./images/pod3.jpeg" alt="Image 3" class="card-image">
+                <div class="card-description"><a href="https://www.youtube.com/watch?v=nnEZVVC4Ap8&t=9s">Ashneer Grover
+                        EASY Hacks</a></div>
+            </div>
+            <div class="card">
+                <img src="./images/pod4.jpeg" alt="Image 4" class="card-image">
+                <div class="card-description"><a href="https://www.youtube.com/watch?v=znwM5pIWz2U">JAY DEVGN 35 years
+                    </a></div>
+            </div>
+        </div>
+        <div class="background-container">
+            <h1 class="headings-container">Entertainment News</h1>
+            <div class="imagess-container">
+                <div class="imagess-wrapper">
+                    <img src="./images/ent1.webp" alt="Image 1">
+                    <div class="description">
+                        <h5>Manoj Bajpayee recalls father-in-law’s advice on how to handle slander against one’s
+                            religious, cultural identity: ‘Just smile’</h5>
+                        <hr>
+                        <div class="news-actions">
+                            <span class="news-action"><i class="fas fa-eye"></i> 1.9k</span>
+                            <span class="news-action"><i class="fas fa-thumbs-up"></i>800</span>
+                            <span class="news-action"><i class="fas fa-comments"></i> 234</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="imagess-wrapper">
+                    <img src="./images/ent2.webp" alt="Image 2">
+                    <div class="description">
+                        <h5>Shah Rukh Khan health update: Juhi Chawla says SRK is ‘feeling much better, will be in the
+                            stands to cheer for KKR at final’</h5>
+                        <hr>
+                        <div class="news-actions">
+                            <span class="news-action"><i class="fas fa-eye"></i> 1.8k</span>
+                            <span class="news-action"><i class="fas fa-thumbs-up"></i> 600</span>
+                            <span class="news-action"><i class="fas fa-comments"></i> 49</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="imagess-wrapper">
+                    <img src="./images/ent3.webp" alt="Image 3">
+                    <div class="description">
+                        <h5>Kalki 2898 AD new teaser shows chemistry between Prabhas and his AI-powered car Bujji.
+                            Really excited for the film said by Prabhas.</h5>
+                        <hr>
+                        <div class="news-actions">
+                            <span class="news-action"><i class="fas fa-eye"></i> 1.9k</span>
+                            <span class="news-action"><i class="fas fa-thumbs-up"></i> 1.1k</span>
+                            <span class="news-action"><i class="fas fa-comments"></i> 876</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="button-container">
+                <button class="view-all-button"><a href="/Entertainment/Entertainment/index.html">View All</a></button>
+            </div>
+        </div>
+        
+    <div id="foot-placeholder"></div>
+
+</body>
+
+</html>

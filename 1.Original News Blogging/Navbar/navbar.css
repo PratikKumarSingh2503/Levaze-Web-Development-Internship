@@ -1,0 +1,166 @@
+.navbar {
+    background-color: #2b9ec2;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.navbar ul li {
+    margin: 0 25px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Proza Libre', serif;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #bbbbbb;
+}
+
+.navbar ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #003366;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.navbar ul li .dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.navbar ul li .dropdown-content a:hover {
+    background-color: #555;
+}
+
+.navbar ul li:hover .dropdown-content {
+    display: block;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+    padding-right: 100px;
+}
+
+.navbar input[type="text"] {
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    margin-right: 20px;
+    width: 150px;
+    /* Fixed width to make it square */
+    height: 40px;
+    /* Fixed height to make it square */
+    color: #2b9ec2;
+}
+
+.navbar input[type="text"]::placeholder {
+    color: #2b9ec2;
+}
+
+.social-icons {
+    font-size: 1.5rem;
+    color: #333;
+    transition: color 0.2s ease-in-out;
+}
+
+.social-icons:hover {
+    color: blue;
+}
+
+.social-icons i {
+    margin-left: 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.social-icons i:hover {
+    color: red;
+}
+
+.right-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.right-section input[type="text"] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 1rem;
+    width: 50%;
+}
+
+.dark-mode-toggle {
+    position: absolute;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.dark-mode-toggle i {
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.dark-mode-toggle i:last-child {
+    display: none;
+}
+
+body.dark-mode {
+    /* background-color: #222; */
+    color: #ddd;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+    color: #fff;
+}
+
+body.dark-mode a {
+    color: #fff;
+}
+
+body.dark-mode .social-icons i {
+    color: #fff;
+}
+
+/* Add more CSS rules for other elements as needed */
