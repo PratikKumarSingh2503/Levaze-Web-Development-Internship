@@ -5,13 +5,13 @@ This project was developed during my internship at Levaze, where I contributed t
 ## Projects
 
 1. **Original News Blogging**  
-   - **Description:** A classic blogging website built using HTML, CSS, and JavaScript with API integration for real-time content updates. This static platform features sections for news, opinions, sports, and entertainment, demonstrating effective content presentation in a traditional web format.
+   - **Description:** This project was developed during my internship at Levaze, where I collaborated with a team to create a dynamic blogging website. The site includes multiple sections such as news articles, technology updates, opinion pieces, sports news, podcasts, and entertainment. This version was built using HTML, CSS, and JavaScript, and integrates various APIs to deliver real-time content.
    - **Technologies:** HTML, CSS3, JavaScript, Font Awesome, API Integration  
    - **Link:** [Live Demo](https://news-blogging-3dbfb0.netlify.app/) | [Repository](https://github.com/PratikKumarSingh2503/Levaze-Web-Development-Internship/tree/main/1.Original%20News%20Blogging)
    - **Note:** This project was originally developed during my internship as part of a team.
 
 3. **Enhanced News Blogging**  
-   - **Description:** A dynamic and interactive blogging platform developed using ReactJS, featuring API integration for live content updates. This modern version leverages component-based architecture, state management, and reusable UI elements to create a responsive and engaging user experience across sections like technology news, opinions, sports, and entertainment.
+   - **Description:** This is a revamped version of the blogging website I initially developed during my internship at Levaze. Rebuilt with ReactJS, this project showcases improved performance, modular code structure, and enhanced user experience. The site features dynamic sections like news articles, technology updates, opinion pieces, sports news, podcasts, and entertainment, with API integrations providing real-time content updates.
    - **Technologies:** ReactJS, Api Integration  
    - **Link:** [Live Demo](https://news-blogging.vercel.app/) | [Repository](https://github.com/PratikKumarSingh2503/Levaze-Web-Development-Internship/tree/main/2.Enhanced%20News%20Blogging)
    - **Note:** This project is a **personal** rework of an internship project, upgraded and redeveloped using ReactJS.
